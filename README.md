@@ -124,19 +124,11 @@ Update the products array in `src/app/store/page.tsx` with your actual merchandi
 
 ## Deployment
 
-### Vercel (Recommended)
+### GitHub Pages
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically on push
+This site is automatically deployed to GitHub Pages via GitHub Actions. Any push to the `main` branch triggers a new deployment.
 
-### Other Platforms
-
-Build the project:
-```bash
-npm run build
-npm start
-```
+Visit the live site at: https://pkane.github.io
 
 ## Contributing
 
