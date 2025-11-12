@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import styles from './Store.module.scss'
 import MotionWrapper from '@/components/MotionWrapper'
+import Image from 'next/image'
 
 interface Product {
   id: number
@@ -156,7 +157,7 @@ const Store = () => {
                 variants={gridItemVariants}
               >
                 <div className={styles.imageWrapper}>
-                  <img src={product.image} alt={product.name} className={styles.image} />
+                  <Image src={product.image} alt={product.name} className={styles.image} width={300} height={300} />
                   <div className={styles.overlay}>
                     <button
                       className={styles.viewButton}
@@ -186,10 +187,12 @@ const Store = () => {
                 ×
               </button>
               <div className={styles.modalGrid}>
-                <img
+                <Image
                   src={selectedProduct.image}
                   alt={selectedProduct.name}
                   className={styles.modalImage}
+                  width={300}
+                  height={300}
                 />
                 <div className={styles.modalInfo}>
                   <h2>{selectedProduct.name}</h2>

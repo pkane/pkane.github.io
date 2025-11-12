@@ -139,7 +139,7 @@ const Contact = () => {
           </MotionWrapper>
           <MotionWrapper variants={itemVariants}>
             <p className={styles.subtitle}>
-              Ready to start your next project? Let's discuss how we can help bring your vision to life.
+              Ready to start your next project? Let&apos;s discuss how we can help bring your vision to life.
             </p>
           </MotionWrapper>
         </MotionWrapper>
@@ -148,12 +148,12 @@ const Contact = () => {
           <div className={styles.grid}>
             <MotionWrapper variants={contentContainerVariants} initial="hidden" whileInView="visible" viewport={{ amount: 0.4 }} className={styles.info}>
               <MotionWrapper variants={itemVariants}>
-                <h2>Let's Work Together</h2>
+                <h2>Let&apos;s Work Together</h2>
               </MotionWrapper>
               <MotionWrapper variants={itemVariants}> 
                 <p>
                   Whether you need a complete brand overhaul, a new website, or just want to
-                  chat about your ideas, we'd love to hear from you. Every great project
+                  chat about your ideas, we&apos;d love to hear from you. Every great project
                   starts with a conversation.
                 </p>
               </MotionWrapper>
@@ -230,7 +230,7 @@ const Contact = () => {
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
                   {submitStatus === 'success' && (
-                    <p className={styles.successMessage}>Message sent successfully! We'll get back to you soon.</p>
+                    <p className={styles.successMessage}>Message sent successfully! We&apos;ll get back to you soon.</p>
                   )}
                   {submitStatus === 'error' && (
                     <p className={styles.errorMessage}>Failed to send message. Please try again or email us directly.</p>
